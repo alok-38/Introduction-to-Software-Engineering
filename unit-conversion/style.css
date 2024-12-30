@@ -37,17 +37,39 @@ section p:nth-child(3) {
     margin-bottom: 1rem;
 }
 
-section input, button {
+section p:nth-child(1) {
+    margin-bottom: .5rem;
+}
+
+input, button {
     width: 100px;
     height: 50px;
     display: block;
     margin: auto;
+    text-align: center;
+    outline: none;
+    color: blueviolet;
+}
+
+input {
+    font-size: 24px;
+}
+
+input:focus,
+input:active {
+    outline: 2px solid gray;
 }
 
 button {
     border: 0;
-    outline: none;
     cursor: pointer;
+    text-transform: uppercase;
+    padding: 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    border-radius: 2.5px;
 }
 
 footer, header {
