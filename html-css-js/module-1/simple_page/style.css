@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Roboto", serif;
+}
+
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+    padding: 5px 45px;
+}
+
+input {
+    height: 35px;
+}
+
+button {
+    height: 40px;
+}
