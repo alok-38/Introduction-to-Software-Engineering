@@ -6,6 +6,8 @@
 
 body {
     font-family: "Roboto", serif;
+    background-color: #ADD8E6;
+    line-height: 1.6;
 }
 
 
@@ -20,6 +22,13 @@ ol {
     list-style-type: none;
 }
 
+figure {
+    overflow: hidden;
+    border-radius: 15px;
+    height: auto;
+    width: fit-content;
+}
+
 img {
     display: block;
     object-fit: cover;
@@ -30,6 +39,11 @@ textarea,
 button {
     outline: none;
     padding: 5px 45px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    border-radius: 2.5px;
+    border: 2px salmon solid;
 }
 
 input {
@@ -38,4 +52,24 @@ input {
 
 button {
     height: 40px;
+}
+
+/* Box model */
+body {
+    margin: 1.5rem;
+    padding: .5rem;
+}
+
+header, section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Layout */
+.thomas {
+    display: flex;
+}
+
+.about {
+    display: flex;
 }

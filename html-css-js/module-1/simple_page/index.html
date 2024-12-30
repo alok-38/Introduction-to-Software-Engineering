@@ -19,78 +19,80 @@
         <h1>Welcome to the Thomas J. Watson Sr. Fan Club</h1>
     </header>
 
-    <section>
-        <p>Thomas J. Watson Sr. was a visionary leader and the founder of IBM, who played a key role in shaping the
-            modern computing industry.</p>
-    </section>
+    <div class="thomas">
+        <section>
+            <p>Thomas J. Watson Sr. was a visionary leader and the founder of IBM, who played a key role in shaping the
+                modern computing industry.</p>
+        </section>
+        <section>
+            <h2>About Thomas J. Watson Sr.</h2>
+            <figure>
+                <img src="Thomas_J._Watson_-_National_Portrait_Gallery.jpg" alt="Portrait of Thomas J. Watson Sr."
+                    width="300" height="400">
+                <figcaption>Courtesy: <a target="_blank"
+                        href="https://en.wikipedia.org/wiki/Thomas_J._Watson">Wikipedia</a></a>
+                </figcaption>
+            </figure>
+        </section>
+    </div>
 
-    <section>
-        <h2>About Thomas J. Watson Sr.</h2>
-        <figure>
-            <img src="Thomas_J._Watson_-_National_Portrait_Gallery.jpg" alt="Portrait of Thomas J. Watson Sr."
-                width="300" height="400">
-            <figcaption>Courtesy: <a target="_blank"
-                    href="https://en.wikipedia.org/wiki/Thomas_J._Watson">Wikipedia</a></a>
-            </figcaption>
-        </figure>
-    </section>
-
-    <section>
-        <h3>Some Key Achievements</h3>
-        <ul>
-            <li>Founded IBM in 1911</li>
-            <li>Introduced the slogan "THINK"</li>
-            <li>Led IBM to become a global leader in computing</li>
-            <li>Contributed to the development of the computer industry</li>
-        </ul>
-    </section>
-
-    <section>
-        <h3>IBM Milestones</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Year</th>
-                    <th>Milestone</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1911</td>
-                    <td>IBM was founded as Computing-Tabulating-Recording Co. (CTR)</td>
-                </tr>
-                <tr>
-                    <td>1924</td>
-                    <td>CTR was renamed IBM (International Business Machines)</td>
-                </tr>
-                <tr>
-                    <td>1935</td>
-                    <td>Introduction of the IBM 601 Accounting Machine</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section>
-        <h3>Links to More Information</h3>
-        <ul>
-            <li><a href="https://www.ibm.com" target="_blank">IBM Official Website</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Thomas_J._Watson_Sr." target="_blank">Thomas J. Watson Sr. -
-                    Wikipedia</a></li>
-        </ul>
-    </section>
+    <div class="about">
+        <section>
+            <h3>Some Key Achievements</h3>
+            <ul>
+                <li>Founded IBM in 1911</li>
+                <li>Introduced the slogan "THINK"</li>
+                <li>Led IBM to become a global leader in computing</li>
+                <li>Contributed to the development of the computer industry</li>
+            </ul>
+        </section>
+        <section>
+            <h3>IBM Milestones</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Milestone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1911</td>
+                        <td>IBM was founded as Computing-Tabulating-Recording Co. (CTR)</td>
+                    </tr>
+                    <tr>
+                        <td>1924</td>
+                        <td>CTR was renamed IBM (International Business Machines)</td>
+                    </tr>
+                    <tr>
+                        <td>1935</td>
+                        <td>Introduction of the IBM 601 Accounting Machine</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>Links to More Information</h3>
+            <ul>
+                <li><a href="https://www.ibm.com" target="_blank">IBM Official Website</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Thomas_J._Watson_Sr." target="_blank">Thomas J. Watson Sr. -
+                        Wikipedia</a></li>
+            </ul>
+        </section>
+    </div>
 
     <section>
         <h3>We Value Your Feedback!</h3>
         <form action="/submit-feedback" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name" required placeholder="Thomas J Watson"><br><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" required placeholder="thomas_watson@ibm.com"><br><br>
 
             <label for="message">Your Feedback:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <textarea id="message" name="message" rows="4" cols="50" required
+                placeholder="Your feedback"></textarea><br><br>
 
             <button type="submit">Submit Feedback</button>
         </form>
