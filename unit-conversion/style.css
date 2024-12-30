@@ -17,4 +17,40 @@ header,
 main,
 footer {
     background-color: #ffffff;
+    width: 450px;
+    border-radius: 15px;
+    background-color: blueviolet;
+    color: #ffffff;
+    text-align: center;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: .5rem;
+}
+
+section p:nth-child(3) {
+    margin-bottom: 1rem;
+}
+
+section input, button {
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+
+button {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+footer, header {
+    padding: 1rem 0;
+}
+
