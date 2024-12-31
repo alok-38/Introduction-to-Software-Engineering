@@ -5,22 +5,48 @@
 }
 
 body {
-    margin: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    padding: 2rem;
+}
+
+header {
+    padding: 2rem;
 }
 
 fieldset {
     padding: 2rem;
+    width: 45%;
+    float: left;
+    margin-right: 25px;
 }
 
-h1 {
+fieldset input {
+    padding: 7px 45px;
+}
+
+fieldset input,
+fieldset label {
     margin-bottom: 1rem;
 }
 
-input[type="submit"] {
+fieldset input {
+    width: 250px;
+    margin-left: 50px;
+}
+
+input[type="submit"],
+input[type="reset"] {
     margin-top: 15px;
+    padding: 10px 45px;
+}
+
+input[type="submit"] {
+    margin-right: 15px;
+}
+
+label {
+    margin-bottom: .5rem;
 }
