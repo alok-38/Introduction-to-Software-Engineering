@@ -1,6 +1,7 @@
 const inputEl = document.querySelector("input");
 const ulEl = document.querySelector("ul");
-const buttonEl = document.querySelector("button");
+const addButtonEl = document.querySelector(".add-btn");
+const removeButtonEl = document.querySelector(".remove-btn");
 
 const addTasks = () => {
     let taskInput = inputEl.value;
@@ -10,4 +11,13 @@ const addTasks = () => {
     inputEl.value = "";
 }
 
-buttonEl.addEventListener('click', addTasks);
+addButtonEl.addEventListener('click', addTasks);
+
+const removeTasks = () => {
+    const lastTask = ulEl.querySelector("li:last-child");
+    if (lastTask) {
+        ulEl.removeChild(lastTask);
+    }
+}
+
+removeButtonEl.addEventListener('click', removeTasks);
