@@ -1,52 +1,113 @@
+/* Basic reset for margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set up the body with a background color and font */
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 2rem;
+    align-items: center;
+    height: 100vh;
 }
 
+/* Style the main wrapper */
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Header styling */
 header {
-    padding: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Style the fieldsets */
 fieldset {
-    padding: 2rem;
-    width: 45%;
-    float: left;
-    margin-right: 25px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fafafa;
 }
 
-fieldset input {
-    padding: 7px 45px;
+legend {
+    font-weight: bold;
+    color: #333;
 }
 
-fieldset input,
-fieldset label {
-    margin-bottom: 1rem;
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #333;
 }
 
-fieldset input {
-    width: 250px;
-    margin-left: 50px;
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
+/* Focus effect for inputs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit and Reset buttons styling */
 input[type="submit"],
 input[type="reset"] {
-    margin-top: 15px;
-    padding: 10px 45px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
 }
 
-input[type="submit"] {
-    margin-right: 15px;
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
 }
 
-label {
-    margin-bottom: .5rem;
+/* Add some spacing between the buttons */
+input[type="reset"] {
+    background-color: #f44336;
+    margin-top: 10px;
+}
+
+input[type="reset"]:hover {
+    background-color: #d32f2f;
 }
