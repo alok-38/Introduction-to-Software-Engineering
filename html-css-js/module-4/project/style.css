@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+header {
+    background-color: #6500B6;
+    padding: 2.5rem;
+}
+
+header a {
+    color: #CCADE1;
+}
+
+.nav--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 50px;
+}
