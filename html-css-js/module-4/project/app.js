@@ -24,7 +24,7 @@ formEl.addEventListener("submit", function (event) {
     // Optionally, hide the popup message after 3 seconds (auto-dismiss)
     setTimeout(function () {
         popupMessage.classList.remove('show');
-    }, 10000);
+    }, 3000);
 
     // Optionally, clear the form fields after submission
     inputEl.value = '';
