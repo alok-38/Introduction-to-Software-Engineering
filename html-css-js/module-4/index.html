@@ -4,20 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC Consultant</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <title>Client Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav role="navigation">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h1>About Me</h1>
+        <p>Hello! I'm Jason Benn, a passionate web developer with a strong foundation in front-end and back-end
+            technologies.
+            I am committed to building responsive and efficient web applications that offer a seamless user experience.
+            With
+            over 4 years of experience in web development, I have worked on a range of projects that have sharpened my
+            skills
+            in coding, problem-solving, and design.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h1>Skills</h1>
         <ul>
-            <li><a href="#About Us">About Us</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Recommendations">Recommendations</a></li>
+            <li><strong>HTML</strong> - Building structured web pages</li>
+            <li><strong>CSS</strong> - Styling for a modern, responsive design</li>
+            <li><strong>JavaScript</strong> - Adding interactivity and functionality</li>
+            <li><strong>React</strong> - Building dynamic user interfaces</li>
+            <li><strong>Node.js and Python</strong> - Server-side development</li>
+            <li><strong>Git</strong> - Version control and collaboration</li>
         </ul>
-    </nav>
+    </section>
+
+    <section id="projects" class="section">
+        <h1>Projects</h1>
+        <div class="project">
+            <h2>Project 1: Machine learning driven application</h2>
+            <p>This project is a Machine learning driven application that demonstrates human
+                level intelligence built using using Python.</p>
+            <a href="https://github.com/johndoe/portfolio" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h2>Project 2: E-commerce Store</h2>
+            <p>An e-commerce platform that allows users to browse products, add them to a cart, and complete the
+                checkout
+                process. Built with React and Node.js for the front-end and back-end respectively.</p>
+            <a href="https://github.com/johndoe/ecommerce" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h2>Project 3: Logistics platform for the US military</h2>
+            <p>This app enables rapid mobilization of troops and weapons in order to
+                successfully invade another country built using C++.
+            </p>
+            <a href="https://github.com/johndoe/ecommerce" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <section id="recommendations" class="section">
+        <h1>Recommendations</h1>
+        <div class="recommendation">
+            <p><strong>Jane Smith</strong> - "Jason is an exceptional developer who is detail-oriented and always meets
+                deadlines. His problem-solving skills are outstanding."</p>
+        </div>
+        <div class="recommendation">
+            <p><strong>Michael Johnson</strong> - "Jason has a great understanding of both front-end and back-end
+                development. His ability to work collaboratively in teams makes him a valuable asset."</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jason Benn | Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
