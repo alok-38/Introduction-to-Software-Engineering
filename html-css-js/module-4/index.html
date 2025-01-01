@@ -10,41 +10,36 @@
 </head>
 
 <body class="bg-slate-50 m-5">
-    <header class="p-4 bg-teal-950 text-white mb-4">
-        <div class="nav-wrapper flex justify-between">
-            <div class="logo uppercase"><a href="/">Jason Ben</a></div>
+    <header class="p-4 bg-teal-950 text-white mb-6">
+        <div class="nav-wrapper flex justify-between items-center">
+            <div class="logo uppercase font-extrabold text-lg"><a href="/">Jason Benn</a></div>
             <nav>
-                <ul class="flex gap-4 text-sm font-normal">
-                    <li><a href="#about" class="px-2 py-1 min-w-[100px] transition-all hover:font-bold">About Me</a>
+                <ul class="flex gap-6 text-sm font-medium">
+                    <li><a href="#about" class="px-2 py-1 transition-all hover:font-bold">About Me</a></li>
+                    <li><a href="#skills" class="px-2 py-1 transition-all hover:font-bold">Skills</a></li>
+                    <li><a href="#projects" class="px-2 py-1 transition-all hover:font-bold">Projects</a></li>
+                    <li><a href="#recommendations" class="px-2 py-1 transition-all hover:font-bold">Recommendations</a>
                     </li>
-                    <li><a href="#skills" class="px-2 py-1 min-w-[100px] transition-all hover:font-bold">Skills</a></li>
-                    <li><a href="#projects" class="px-2 py-1 min-w-[100px] transition-all hover:font-bold">Projects</a>
-                    </li>
-                    <li><a href="#recommendations"
-                            class="px-2 py-1 min-w-[100px] transition-all hover:font-bold">Recommendations</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="about-wrapper flex flex-row justify-between">
-        <section id="about" class="section basis-1/2">
-            <h1 class="mb-2">About Me</h1>
-            <p>Hello! I'm Jason Benn, a passionate web developer with a strong foundation in front-end and back-end
-                technologies.
-                I am committed to building responsive and efficient web applications that offer a seamless user
-                experience.
-                With
-                over 4 years of experience in web development, I have worked on a range of projects that have sharpened
-                my
-                skills
-                in coding, problem-solving, and design.</p>
+    <div class="about-wrapper flex flex-col md:flex-row justify-between md:space-x-8 mb-10 mx-auto max-w-7xl">
+        <section id="about" class="section w-full md:w-1/2">
+            <h1 class="mb-4 text-3xl font-bold">About Me</h1>
+            <p class="leading-8">Hello! I'm Jason Benn, a passionate web developer with a strong foundation in front-end
+                and back-end technologies. I am committed to building responsive and efficient web applications that
+                offer a seamless user experience. With over 4 years of experience in web development, I have worked on a
+                range of projects that have sharpened my skills in coding, problem-solving, and design.</p>
         </section>
-        <section id="skills" class="section">
-            <h1 class="mb-2">Skills</h1>
+
+        <!-- Added margin-top here for spacing -->
+        <section id="skills" class="section w-full md:w-1/2 mt-8">
+            <h1 class="mb-4 text-3xl font-bold">Skills</h1>
             <ul class="space-y-4">
                 <li><strong>HTML</strong> - Building structured web pages</li>
-                <li><strong>CSS</strong> - Styling for a modern, responsive design</li>
+                <li><strong>CSS</strong> - Styling for modern, responsive design</li>
                 <li><strong>JavaScript</strong> - Adding interactivity and functionality</li>
                 <li><strong>React</strong> - Building dynamic user interfaces</li>
                 <li><strong>Node.js and Python</strong> - Server-side development</li>
@@ -53,36 +48,41 @@
         </section>
     </div>
 
-    <section id="projects" class="section">
-        <h1>Projects</h1>
-        <div class="project">
-            <h2>Project 1: Machine learning driven application</h2>
-            <img src="https://via.placeholder.com/250x150" alt="Machine learning app screenshot">
-            <p>This project is a Machine learning driven application that demonstrates human
-                level intelligence built using using Python.</p>
-            <a href="https://github.com/johndoe/portfolio" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h2>Project 2: E-commerce Store</h2>
-            <img src="https://via.placeholder.com/250x150" alt="E-commerce store screenshot">
-            <p>An e-commerce platform that allows users to browse products, add them to a cart, and complete the
-                checkout
-                process. Built with React and Node.js for the front-end and back-end respectively.</p>
-            <a href="https://github.com/johndoe/ecommerce" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h2>Project 3: Logistics platform for the US military</h2>
-            <img src="https://via.placeholder.com/250x150" alt="Logistics platform screenshot">
-            <p>This app enables rapid mobilization of troops and weapons in order to
-                successfully invade another country built using C++.
-            </p>
-            <a href="https://github.com/johndoe/ecommerce" target="_blank">View on GitHub</a>
+    <section id="projects" class="section mb-8 mx-auto max-w-7xl">
+        <h1 class="text-3xl font-bold mb-4">Projects</h1>
+        <!-- Flexbox Layout for Projects -->
+        <div class="flex justify-between gap-6">
+            <div class="project w-1/3">
+                <h2 class="text-xl font-semibold mb-2">Project 1: Machine Learning Driven Application</h2>
+                <img class="my-2" src="https://via.placeholder.com/250x150" alt="Machine learning app screenshot">
+                <p class="w-64">This project is a Machine learning driven application that demonstrates human-level
+                    intelligence built using Python.</p>
+                <a href="https://github.com/johndoe/portfolio" target="_blank"
+                    class="text-teal-600 hover:underline">View on GitHub</a>
+            </div>
+            <div class="project w-1/3">
+                <h2 class="text-xl font-semibold mb-2">Project 2: E-commerce Store</h2>
+                <img class="my-2" src="https://via.placeholder.com/250x150" alt="E-commerce store screenshot">
+                <p class="w-64">An e-commerce platform that allows users to browse products, add them to a cart, and
+                    complete the checkout process. Built with React and Node.js for the front-end and back-end
+                    respectively.</p>
+                <a href="https://github.com/johndoe/ecommerce" target="_blank"
+                    class="text-teal-600 hover:underline">View on GitHub</a>
+            </div>
+            <div class="project w-1/3">
+                <h2 class="text-xl font-semibold mb-2">Project 3: Logistics Platform for the US Military</h2>
+                <img class="my-2" src="https://via.placeholder.com/250x150" alt="Logistics platform screenshot">
+                <p class="w-64">This app enables rapid mobilization of troops and weapons in order to successfully
+                    invade another country built using C++.</p>
+                <a href="https://github.com/johndoe/ecommerce" target="_blank"
+                    class="text-teal-600 hover:underline">View on GitHub</a>
+            </div>
         </div>
     </section>
 
-    <section id="recommendations" class="section">
-        <h1>Recommendations</h1>
-        <div class="recommendation">
+    <section id="recommendations" class="section leading-8 mx-auto max-w-7xl">
+        <h1 class="text-3xl font-bold mb-4">Recommendations</h1>
+        <div class="recommendation mb-4">
             <p><strong>Jane Smith</strong> - "Jason is an exceptional developer who is detail-oriented and always meets
                 deadlines. His problem-solving skills are outstanding."</p>
         </div>
@@ -92,7 +92,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="text-center py-4">
         <p>&copy; 2025 Jason Benn | Portfolio</p>
     </footer>
 
