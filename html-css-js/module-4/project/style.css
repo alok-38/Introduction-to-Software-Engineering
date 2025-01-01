@@ -12,8 +12,16 @@ a {
     text-decoration: none;
 }
 
+img {
+    height: 340px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 body {
     background-color: #FFFFFF;
+    line-height: 1.6;
 }
 
 header {
@@ -37,7 +45,49 @@ header a {
     gap: 5px;
 }
 
+.contact a {
+    font-weight: 600;
+}
+
+.contact :nth-child(1) {
+    font-size: 32px;
+}
+
 .nav ul {
     display: flex;
     gap: 50px;
+}
+
+.nav ul a {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* End of header */
+
+main {
+    margin: 2.5rem;
+}
+
+.about--section {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5rem;
+    justify-content: space-evenly;
+}
+
+.about {
+    width: 50%;
+}
+
+.about>div h1 {
+    font-size: 64px;
+    margin-bottom: 1rem;
+    color: #6501B4;
+}
+
+.about div:nth-child(2) {
+    font-size: 24px;
+    color: #616060;
+    font-weight: 500;
 }
