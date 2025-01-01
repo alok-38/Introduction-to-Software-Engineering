@@ -181,6 +181,10 @@ blockquote {
     font-style: italic;
 }
 
+.message--section {
+    position: relative;
+}
+
 .message--section h2 {
     margin: 1rem 0 1rem 400px;
 }
@@ -253,4 +257,23 @@ form textarea:focus {
     /* Green border on focus */
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
     /* Subtle green glow effect */
+}
+
+/* Styling for the popup message */
+.popup {
+    display: none; /* Initially hidden */
+    color: white;
+    background-color: #6501B4;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    position: absolute; /* Absolutely position the popup inside the section */
+    bottom: 100px;
+    width: 30%;
+    left: 550px;
+}
+
+.popup.show {
+    display: block; /* Show the popup when the 'show' class is added */
 }
