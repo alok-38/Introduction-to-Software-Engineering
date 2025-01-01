@@ -63,6 +63,10 @@ header a {
     font-size: 18px;
 }
 
+.contact .fas {
+    margin-right: 5px;
+}
+
 /* End of header */
 
 main {
@@ -90,4 +94,163 @@ main {
     font-size: 24px;
     color: #616060;
     font-weight: 500;
+}
+
+li img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.skills--section {
+    margin: 1.5rem;
+}
+
+.skills--section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    width: 80%;
+    margin-left: 200px;
+}
+
+.skills--section li {
+    border: 2px salmon solid;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skills--section h2 {
+    color: #6501B4;
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects--section {
+    margin: 5rem auto 1rem auto;
+    width: 74%;
+}
+
+.projects--section h2 {
+    color: rgb(51, 54, 57);
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.projects--section p {
+    color: #616060;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.projects--section div {
+    margin-bottom: 1rem;
+}
+
+.projects--section div:nth-child(3) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.quoptes {
+    display: flex;
+    width: 75%;
+    margin: auto;
+}
+
+.quoptes div {
+    border: 2px salmon solid;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 30%;
+    margin-right: 25px;
+}
+
+.recommendation--section h2 {
+    margin-left: 200px;
+    margin-bottom: .5rem;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.message--section h2 {
+    margin: 1rem 0 1rem 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+/* Basic button styles */
+button {
+    width: 150px;
+    padding: 10px 45px;
+    cursor: pointer;
+    /* Green background */
+    color: white;
+    /* White text */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition */
+    color: #616060;
+    font-weight: 600;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #6501B4;
+    /* Slightly darker green */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    color: #FFFFFF;
+}
+
+/* Button focus effect */
+button:focus {
+    outline: 2px solid #6501B4;
+    /* Green outline on focus */
+    /* background-color: #45a049; */
+}
+
+/* Input and textarea styles */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+}
+
+textarea {
+    height: 200px;
+}
+
+/* Input and textarea hover effect */
+form input:hover,
+form textarea:hover {
+    border-color: #6501B4;
+    /* Green border on hover */
+}
+
+/* Input and textarea focus effect */
+form input:focus,
+form textarea:focus {
+    border-color: #6501B4;
+    /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+    /* Subtle green glow effect */
 }
