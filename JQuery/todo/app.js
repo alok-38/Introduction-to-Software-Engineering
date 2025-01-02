@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    // When the button is clicked
-    $("button").click(function () {
+    // When the "Add" button is clicked
+    $("button:first").click(function () {
         var taskText = $("#taskInput").val(); // Get the value from the input field
 
         // Check if the input is not empty
@@ -15,6 +15,18 @@ $(document).ready(function () {
             $("#taskInput").val("");
         } else {
             alert("Please enter a task.");
+        }
+    });
+
+    // When the "Remove" button is clicked
+    $("#remove").click(function () {
+        // Check if there are any li elements inside the ul
+        if ($("#taskList li").length > 0) {
+            // Remove the last li (task) from the ul
+            $("#taskList li:last").remove();
+        } else {
+            // If there are no tasks to remove, show an alert
+            alert("No tasks to remove.");
         }
     });
 });
