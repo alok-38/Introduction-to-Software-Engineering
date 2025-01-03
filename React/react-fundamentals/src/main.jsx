@@ -1,10 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React from "react";
+import ReactDOM from 'react-dom/client';
+import './index.css';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+function Greeting() {
+  return <h2 className="text-red-400 text-5xl">My first component</h2>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<Greeting />);
