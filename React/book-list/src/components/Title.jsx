@@ -1,13 +1,9 @@
 import React from 'react'
 
 const Title = () => {
-  return (
-    <div>
-        <h2>Atomic Habits</h2>
-        <h2>Atomic Habits</h2>
-        <h2>Atomic Habits</h2>
-    </div>
-  )
+    return (
+        <h2 className='text-center my-2'>Atomic Habits</h2>
+    )
 }
 
 export default Title

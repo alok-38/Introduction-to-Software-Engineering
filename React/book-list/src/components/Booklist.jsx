@@ -3,7 +3,9 @@ import Book from './Book'
 
 const Booklist = () => {
     return (
-        <section>
+        <section className='flex justify-center'>
+            <Book />
+            <Book />
             <Book />
         </section>
     )
