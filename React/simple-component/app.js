@@ -5,4 +5,4 @@ function HelloMessage({ name }) {
 // Get the root element from the DOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<HelloMessage name="Alok" />);
+root.render(<HelloMessage name="123" />);
