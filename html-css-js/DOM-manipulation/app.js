@@ -1,11 +1,12 @@
-function Header() {
-    return <h1>Develop. Preview. Ship.</h1>;
+function Header(props) {
+    console.log(props);
+    return <h1>{props.title}</h1>;
 }
 
 function HomePage() {
     return (
         <div>
-            <Header />
+            <Header title="React" />
         </div>
     )
 }
