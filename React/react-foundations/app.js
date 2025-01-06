@@ -6,6 +6,9 @@ function Header({ title = "Develop. Preview. Ship!" }) {
 
 function HomePage() {
     const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+    function handleClick() {
+        console.log("Increment like count")
+    }
     return (
         <div>
             <Header />
@@ -14,6 +17,7 @@ function HomePage() {
                     <li key={index}>{name}</li>
                 ))}
             </ul>
+            <button onClick={ handleClick }>Like</button>
         </div>
     )
 }
