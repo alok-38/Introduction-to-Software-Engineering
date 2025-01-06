@@ -1,28 +1,31 @@
-function Header({ title = "Develop. Preview. Ship!" }) {
-    return (
-        <h1>{title ? title : "Default title"}</h1>
-    )
+const app = document.getElementById("app")
+
+function Header({ title }) {
+    return <h1>{title ? title : "Default title"}</h1>
 }
 
 function HomePage() {
-    const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+    const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"]
+
+    const [likes, setLikes] = React.useState(0)
+
     function handleClick() {
-        console.log("Increment like count")
+        setLikes(likes + 1)
     }
+
     return (
         <div>
-            <Header />
+            <Header title="Develop. Preview. Ship." />
             <ul>
-                {names.map((name, index) => (
-                    <li key={index}>{name}</li>
+                {names.map((name) => (
+                    <li key={name}>{name}</li>
                 ))}
             </ul>
-            <button onClick={ handleClick }>Like</button>
+
+            <button onClick={handleClick}>Like ({likes})</button>
         </div>
     )
 }
 
-const domNode = document.getElementById('app');
-const root = ReactDOM.createRoot(domNode);
-
+const root = ReactDOM.createRoot(app);
 root.render(<HomePage />);
