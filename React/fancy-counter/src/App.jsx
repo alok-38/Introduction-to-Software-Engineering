@@ -3,7 +3,7 @@ import Increment from "./components/Increment"
 const App = () => {
   return (
     <div>
-      <Increment />
+      <Increment number={5} limit={true} />
     </div>
   )
 }

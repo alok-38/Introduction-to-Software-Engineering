@@ -6,9 +6,14 @@ const Increment = () => {
     return (
         <main>
             <span>{count}</span>
-            <button onClick={() => setCount(count + 1)}>
-                +
-            </button>
+            <div className="buttons">
+                <button onClick={() => setCount(count + 1)}>
+                    +
+                </button>
+                <button onClick={() => setCount(0)}>
+                    R
+                </button>
+            </div>
         </main>
     );
 }

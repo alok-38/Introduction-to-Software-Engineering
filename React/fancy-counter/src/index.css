@@ -85,3 +85,8 @@ main {
   align-items: center;
   gap: 5px;
 }
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
